@@ -66,7 +66,7 @@ a:hover { text-decoration: underline; }
   background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius);
   padding: 28px; box-shadow: var(--shadow);
 }
-.avatar { width: 132px; height: 132px; border-radius: 50%; display: block; margin: 0 auto 18px; border: 5px solid var(--soft); object-fit: cover; }
+.avatar { width: clamp(170px, 22vw, 240px); height: clamp(170px, 22vw, 240px); border-radius: 50%; display: block; margin: 0 auto 18px; border: 5px solid var(--soft); object-fit: cover; object-position: center top; }
 .profile-card h2 { font-size: 1.45rem; line-height: 1.18; margin: 0 0 8px; text-align: center; }
 .role, .affiliation { text-align: center; margin: 0 0 6px; color: var(--muted); font-family: ui-sans-serif, system-ui, sans-serif; }
 .role { color: var(--accent); font-weight: 650; }
@@ -91,6 +91,8 @@ h3 { font-size: 1.13rem; margin: 18px 0 8px; }
 }
 .primary { background: var(--accent); color: #fff; }
 .secondary { background: transparent; color: var(--accent); border-color: var(--accent); }
+.btn { display: inline-flex; align-items: center; justify-content: center; padding: 10px 16px; border-radius: 999px; background: var(--accent); color: #fff; border: 1px solid var(--accent); font-family: ui-sans-serif, system-ui, sans-serif; font-weight: 650; }
+.btn:hover { text-decoration: none; background: #6a3426; border-color: #6a3426; }
 .section-block { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); padding: clamp(22px, 4vw, 34px); margin: 26px 0; box-shadow: var(--shadow); }
 .highlight-panel { background: linear-gradient(135deg, #fffdf9, #f0e6d8); }
 .text-link { font-weight: 700; }
